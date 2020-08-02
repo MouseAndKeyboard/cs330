@@ -5,3 +5,26 @@
 2. *Meta-learning problem:* Leverage data/experience on previous tasks to learn new tasks faster or more effectively.
 3. *Transfer learning:* Using data/experience from previous tasks to directly applyto a new task and perform well (0-shot setting).
 4. *Domain Adaptation:* Form of transfer learning where we consider the setting where test distribution may be OOD from what we see in training.
+
+* Homework
+** Downloader
+#+BEGIN_SRC python
+import urllib.request
+import os.path
+from os import path
+import zipfile
+
+download = 'https://cs330.stanford.edu/material/hw1_updated.zip'
+file_name = './hw1.zip'
+
+if (not path.exists(file_name)):
+    with urllib.request.urlopen(download) as response, open(file_name, 'wb') as out_file:
+        data = response.read()
+        out_file.write(data)
+
+with zipfile.ZipFile(file_name, 'r') as zip_ref:
+    zip_ref.extractall('hw1')
+#+END_SRC
+
+#+RESULTS:
+: None
