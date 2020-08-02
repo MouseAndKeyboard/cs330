@@ -1,1 +1,7 @@
 #+TITLE: About
+
+* Informal definitions of terms:
+1. *Multi-task learning problem:* Learn a set of different tasks faster or better than learning each task independently.
+2. *Meta-learning problem:* Leverage data/experience on previous tasks to learn new tasks faster or more effectively.
+3. *Transfer learning:* Using data/experience from previous tasks to directly applyto a new task and perform well (0-shot setting).
+4. *Domain Adaptation:* Form of transfer learning where we consider the setting where test distribution may be OOD from what we see in training.
