@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+/hw1
+/hw1.zip
