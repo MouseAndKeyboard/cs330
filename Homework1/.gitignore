@@ -3,5 +3,6 @@
 *.log
 tmp/
 
-/hw1
+/hw1/hw1/omniglot_resized
+/hw1/__MACOSX
 /hw1.zip
